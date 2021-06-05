@@ -1,0 +1,669 @@
+/*
+Theme Name: torantoOnlineWP
+Author: Mostafizur
+Description: a website for city blog
+Tags: blog,, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+version: 1.0
+Text Domain: torantoOnline
+*/
+
+
+  /*=======================================================================
+                                GENERAL
+   =======================================================================*/
+
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Halvetica Neue", Helvetica Arial , "Open Sans", sans-seif;
+    font-size: 140%;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #a00622;
+}
+
+header {
+    background-color: #a00622;
+    overflow: auto;
+}
+
+.header .logo img {
+    margin: 0 auto;
+    display: block;
+}
+
+
+h1 {
+    font-size: 2.6rem;
+    color: #a00622;
+    text-align: center;
+}
+
+
+
+h2 {
+    font-size: 2rem;
+    color: #a00622;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    color: #a00622;
+}
+
+p {
+    color: #000000;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.content {
+    margin-top: 20px !important;
+}
+
+.primary p {
+    font-size: 1.7rem;
+}
+
+.blog .primary p {
+    font-size: 1.35rem;
+}
+
+ header nav a{
+    color: white !important;
+}
+
+header nav {
+    padding-bottom: 2rem;
+}
+
+header nav ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+
+}
+
+
+
+header nav ul li  a{
+
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 5px 0;
+
+}
+
+#primary h2  {
+    text-align: center;
+    margin-bottom: 1.5rem;  
+}
+.blog #primary h2 {
+    text-align: center;
+    margin-bottom: 1.1rem;
+}
+
+
+ nav ul li.current_page_item {
+    border-bottom: 2px solid white !important;
+}
+
+.logo img {
+    display: inline-block;
+}
+
+
+/* featured image */
+.featured {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.featured h2 {
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    background-color: #a00622;
+    color: white;
+    padding: 10px 20px 10px 10px;
+    text-transform: lowercase;
+}
+
+h2.noimage {
+    color: #a00622;
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem 0;
+    border: 2px solid #a00622;
+    margin-bottom: 2rem;
+}
+
+
+footer nav {
+    display: none;
+
+}
+
+footer hr {
+    border: 2px solid #a00622;
+}
+
+footer div.copyright p{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+#testimonial h3 {
+    color: #a00622;
+    font-size: 2rem;
+}
+
+#testimonial .textwidget {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #767676;
+    background-image: url(image/svg_quote.svg);
+    background-repeat: no-repeat;
+    padding-left: 8.6rem;
+    font-style: italic;
+}
+
+#testimonial .textwidget p {
+    font-size: 2.4rem;
+}
+
+#testimonial .textwidget span {
+    display: block;
+    text-align: right;
+    font-size: normal;
+    font-weight: bold;
+    margin-top: 2rem;
+} 
+
+
+/* footer */
+
+footer {
+    clear: both;
+}
+
+/* where to visit */
+  
+.blog-visit li {
+    width: 100%;
+    padding: .5rem;
+}
+
+.blog-visit li .featured {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.blog-visit li .featured .category {
+    position: absolute;
+    top: 6%;
+    left: 1%;
+
+}
+
+.blog-visit li .featured .category a {
+    text-decoration: none;
+    background-color: #a00622;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: lowercase;
+
+}
+
+ .blog-visit li .content {
+    padding: 10px 20px !important;
+    margin-top: 0 !important;
+}
+ .blog-visit li .content h2 {
+    margin: 0;
+    text-align: left !important;
+}
+
+.blog-visit li .content p {
+font-size: 1.4rem;
+text-align: justify;
+
+}
+
+.blog-visit li .post-information {
+    background-color: #ebebeb;
+    padding: 0.5rem 2rem;
+    overflow: auto;
+}
+
+.blog-visit li .post-information p {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.blog-visit li .post-information .author {
+    float: left;
+    width: 40%;
+}
+
+.blog-visit li .post-information .author span {
+    color: #a00622;
+    font-weight: bold;
+
+}
+
+.blog-visit li .post-information .date {
+
+    float: right;
+    width: 40%;
+    text-align: right;
+    font-weight: bold;
+
+}
+
+/* Single Post */
+
+.single .written-info {
+    background-color: #ebebeb;
+    padding: .5rem;
+    font-size: 1.2rem;
+    overflow: auto;
+    margin-bottom: 2rem;
+}
+
+.single .written-info .column {
+    float: left;
+    margin-right: 2rem;
+ 
+}
+
+.single .written-info .column:last-child {
+    text-align: right;
+    float: right;
+}
+
+.single .written-info a {
+    font-weight: bold;
+}
+
+.single textarea{
+    width: 100%;
+}
+
+/* Category */
+
+.blog article img,
+.category article img {
+    width: 100%;
+}
+    .blog article .content-post,
+.category article .content-post {
+    width: 100%;
+}
+.blog article,
+  .category article {
+      clear: both;
+      margin-bottom: 2rem;
+      overflow: auto;
+  }
+
+  .category h1 {
+    padding-bottom: 5rem;
+}
+
+.blog h2 {
+    margin: 0;
+}
+
+.blog .post-categories {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blog .post-categories li a {
+    color: #fff;
+    background-color: #a00622;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+
+/* Contact Form */
+
+.page-id-18 .container-contact    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.page-id-18 h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-family: inherit;
+    margin-bottom: 2rem;
+
+}
+
+.wpcf7 {
+    background-color: #f2f2f2;
+    padding: 4rem;
+    border-radius: 2rem;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.wpcf7 p {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #a00622;
+    margin-bottom: 1.5rem;
+}
+
+
+.wpcf7 span {
+    display: block;
+    clear: both;
+}
+
+.wpcf7 input,
+.wpcf7 textarea {
+    height: 3.2rem;
+    border: 1px solid #888;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.wpcf7 textarea {
+    height: 200px;
+}
+
+.wpcf7 input,
+.wpcf7 textarea {
+    width: 100%;
+}
+
+.wpcf7 input[type='submit']
+ {
+     background-color: #a00622;
+     font-weight: bold;
+     text-transform: uppercase;
+     font-size: 2.4rem;
+     border-radius: 1.5rem;
+     width: auto;
+     padding: 0 5rem;
+     color: white;
+ }
+
+
+ /* Front Page */
+
+
+.home p{
+    font-size: 1.5rem;
+}
+
+ .bottom-front-page {
+     clear: both;
+ }
+
+ .bottom-front-page h2 {
+     text-align: left;
+     text-transform: lowercase;
+ }
+
+ .bottom-front-page li {
+     width: 100%;
+     margin-bottom: 2rem;
+ }
+
+ .bottom-front-page li h3 {
+     margin: 10px 0;
+ }
+
+
+.bottom-front-page li a.read-more,
+a.more-link {
+    
+    font-weight: bold;
+    display: block;
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+
+
+/* widget */
+.where-to-visit .widget-title{
+    display: none;
+}
+.where-to-visit .widget_sp_image {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.where-to-visit .widget_sp_image img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.where-to-visit .widget_sp_image .widget_sp_image-description{
+    padding: 0 4rem;
+    margin-bottom: 6rem;
+}
+
+
+.where-to-visit .widget_sp_image  p {
+    text-align: center;
+    background-color: #a00622;
+    border-radius: 2rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 2rem;
+
+}
+
+
+
+
+
+@media (min-width: 480px ) {
+
+    
+.blog article img,
+.category article img {
+    float: left;
+    width: 40%;
+}
+    .blog article .content-post,
+.category article .content-post {
+    float: left;
+    width: 60%;
+    padding-left: 2rem;
+}
+    .blog-visit li {
+        float: left;
+        width: 50%;
+    }
+
+    .bottom-front-page .aboutUs {
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    header nav ul li {
+        display: inline;
+        margin-left: 2rem;
+    }
+    .blog-visit li {
+        width: 33.333%;
+        
+    }
+
+    .wpcf7 p {
+        width: 60%;
+    }
+    
+    .primary {
+        float: left;
+        width: 70%;
+        padding-right: 2rem;
+    }
+
+    .bottom-front-page .aboutUs {
+        float: left;
+        width: 30%;
+    }
+
+ .no-sidebar {
+        width: 100% !important;
+    }
+
+    .widget-title {
+        margin-bottom: 2rem;
+    }
+
+    .secondary {
+        float: right;
+        width: 30%;
+        margin: 0;
+        clear: none;
+    }
+
+    #testimonial {
+    padding-top: 4.5rem;
+}
+
+.bottom-front-page .blog-tips {
+    float: right;
+    width: 60%;
+}
+
+
+.bottom-front-page li {
+    float: left;
+    width: 50%;
+    padding: 0 1rem;
+}
+
+/* widget front page */
+
+.where-to-visit .widget_sp_image {
+    float: left;
+    width: 33.33%;
+}
+
+}
+
+
+@media (min-width: 992px) {
+
+
+    /* Header navigation */
+
+    header .logo {
+        width: 40%;
+        float: left;
+    }
+
+    header nav {
+        float: left;
+        width: 60%;
+        margin-top: 6rem;
+    }
+
+
+    header nav ul {
+        float: right;
+    }
+
+
+    /* Footer navigation */
+    footer nav  {
+        display: block;
+        margin-top: 3rem;
+    }
+
+    footer nav ul li {
+        display: inline;
+        margin-right: 2rem;
+    }
+
+    footer nav ul li a {
+        color: #a00622;
+        font-size: 1.6rem;
+        text-decoration: none;
+    }
+
+    .container {
+        width: 990px;
+        margin: 0 auto;
+    }
+    .header .logo {
+        float: left;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    .container {
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+}
